@@ -1,0 +1,10 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <h3>Custom Steps</h3>
+    {{ step_formset.management_form }}
+    {% for step_form in step_formset %}
+        {{ step_form.as_p }}
+    {% endfor %}
+    <button type="submit">Generate Playbook</button>
+</form>
