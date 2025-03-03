@@ -72,3 +72,6 @@ class PlaybookTemplate(models.Model):
 
     def __str__(self):
         return self.name
+
+
+# This is new change in file
